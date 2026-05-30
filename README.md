@@ -3,7 +3,7 @@
 ## Installation
 
 ```bash
-git clone git://github.com/kenianbei/resume.git
+git clone https://github.com/kenianbei/resume.git
 cd resume
 ```
 
