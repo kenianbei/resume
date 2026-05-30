@@ -1,0 +1,117 @@
+@page {
+  margin: 0.75in;
+}
+
+@page resume {
+  margin: 0.5in 0.5in 0.5in 0.5in;
+}
+
+@page cover {
+  margin: 1in;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body.resume {
+  page: resume;
+}
+
+body.cover {
+  page: cover;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 12px;
+  line-height: 1.5em;
+  position: relative;
+}
+
+h1,
+h2 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 1.25em;
+  border-bottom: 1px solid #000;
+  width: 100%;
+  font-variant: small-caps;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0.15em;
+  margin-bottom: 0.15em;
+}
+
+body.resume .resume-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.5em;
+}
+
+body.resume .resume-header .name {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+body.resume .resume-header .contact {
+  font-size: 1em;
+  text-align: right;
+  font-weight: bold;
+}
+
+body.cover {
+  padding: 0.35in;
+}
+
+body.cover .cover-sender {
+  margin-bottom: 1.75em;
+}
+
+body.cover .cover-date {
+  margin-bottom: 1.75em;
+}
+
+body.cover .cover-recipient {
+  margin-bottom: 1.75em;
+}
+
+body.cover .content p {
+  margin: 1em 0;
+}
+
+body.cover .content p+p {
+  margin-top: 1.5em;
+}
+
+/* Reduce extra space around the salutation / closing */
+body.cover .content p:first-child {
+  margin-top: 0;
+}
+
+/* Signature image sizing */
+body.cover img[alt="Signature"],
+body.cover img[src*="signature"] {
+  width: 160px;
+  height: auto;
+  display: block;
+  margin: 2em 0 2em 0;
+}
+
+/* Optional: tighten the last name line under signature */
+body.cover .content p:last-child {
+  margin-top: 0.4em;
+}
